@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History_LIVE</title>
+    <link rel="icon" href="БЧБиРаша.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>History_LIVE</h1>
+        <p>Введите год для просмотра статьи:</p>
+        
+        <!-- Поле ввода для года -->
+        <input type="number" id="year-input" placeholder="Введите год" oninput="showArticle()">
+        
+        <!-- Кнопка About -->
+        <button id="about-btn" onclick="showAbout()">About</button>
+    </header>
+
+    <div id="article-content" class="article-content">
+        <!-- Здесь будет отображаться содержимое статей -->
+    </div>
+
+    <!-- Модальное окно с информацией -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeAbout()">&times;</span>
+            <h2>О сайте</h2>
+            <h3>Приветствую, это разработчик сайта </h3> 
+            <p>Статьи здесь крайне субъективны, пишутся мной разработчиком сайта, поэтому проверяйте информацию, так как здесь информация может быть ошибочной.</p>
+            <h3>Что это за сайт? </h3>
+            <p>Это сайт по истории, главная фишка сайта, что здесь будет статья на каждый год нашей мировой истории, так как создатель сайта христианин, здесь не будет бреда по типу что земле больше 6 миллионов лет и т.п.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- подключаем JavaScript -->
+</body>
+</html>
